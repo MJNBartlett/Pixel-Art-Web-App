@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./stylesheets/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Pixel Perfect</h1>
+      <h2>It's time to make art!</h2>
+    </header>
+    <main>
+      <section id="pixel__menu" class="">
+        <div id="pixel__grid--size-selector" class="">
+          <label for="pixel__grid--size-options">Grid size:</label>
+          <select name="grid size" id="pixel__grid--size-options" onchange="gridSizeChanger()">
+            <option id="grid-size--4x4" value="16">4x4</option>
+            <option id="grid-size--8x8" value="64" selected>8x8</option>
+            <option id="grid-size--16x16" value="256">16x16</option>
+            <option id="grid-size--32x32" value="1024">32x32</option>
+          </select>
+        </div>
+        <div id="pixel__palette-container" class="">
+          <div id="pixel__palette-bg-color" class=""><p class="pixel__palette-bg-text" style="">Background:</p></div>
+          <div id="pixel__palette-selected" class=""></div>
+          <div id="pixel__palette" class=""></div>
+        </div>
+      </section>
+      <section id="" class="">
+        <div id="pixel__grid-container" class="">
+          <div id="pixel__grid" class="grid-size--8x8"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Made with love, by Matt Bartlett.</p>
+    </footer>
+    <script src="./javascript/app.js"></script>
+  </body>
+</html>
