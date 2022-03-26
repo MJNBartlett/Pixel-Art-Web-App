@@ -13,8 +13,10 @@
   /* Background Palette Colours */
   --bg-col-1: #ffffff;
   --bg-col-2: #aaaaaa;
-  --bg-col-3: #181330;
-  --bg-col-4: #000000;
+  --bg-col-3: #292C33;
+  --bg-col-4: #22252A;
+  --bg-col-5: #181330;
+  --bg-col-6: #000000;
   /* Main Body Variables */
   --bg-main-col: #171521;
   --text-main-col: #ffffff;
@@ -28,7 +30,7 @@ body{
   background: var(--bg-main-col);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: auto;
-  max-width: 600px;
+  max-width: 700px;
   color: var(--text-main-col);
 }
 header{
@@ -59,8 +61,11 @@ h2{
   margin: 5px;
 }
 #pixel__grid{
-  width: 600px;
-  height: 600px;
+  min-width: 500px;
+  max-width: 700px;
+  height: 100vw;
+  max-height: 700px;
+  min-height: 500px;
   display: grid;
   grid-gap: 1px;
   background: black;
@@ -82,23 +87,31 @@ h2{
 .grid-size--32x32{
   grid-template: auto / repeat(32, 1fr);
 }
+/* Pixel Menu Elements */
+#pixel__menu{
+
+}
+#pixel__grid--size-selector{
+margin-left: 5px;
+margin-bottom: 10px;
+}
 
 /* Grid with palettes */
 #pixel__palette-container{
   margin-left: 5px;
   display: grid;
   grid-template-columns: 1.5fr 0.7fr 1fr;
-  grid-gap: ;
+  grid-gap: 5px;
   align-items: center;
   width: 100%;
 }
 #pixel__palette-bg-color{
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .bg-colour-tile{
   border-radius: 10px;
@@ -109,8 +122,8 @@ h2{
   text-align: center;
 }
 #pixel__palette-selected{
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius: 20px;
 }
 #pixel__palette{
@@ -169,4 +182,10 @@ h2{
 }
 .bg-colour-4{
   background: var(--bg-col-4);
+}
+.bg-colour-5{
+  background: var(--bg-col-5);
+}
+.bg-colour-6{
+  background: var(--bg-col-6);
 }

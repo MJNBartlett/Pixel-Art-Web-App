@@ -67,7 +67,7 @@ function paletteBuilder(){
 // Main function for changing grid background colour
 // Changes colour of all tiles with the gridBackgroundColour class only.
 function backgroundColourBuilder(){
-  for (let i = 1; i <=4; i++){
+  for (let i = 1; i <=6; i++){
     let backgroundTileDiv = document.createElement('div');
 
     backgroundTileDiv.classList.add("bg-colour-tile", `bg-colour-${i}`);
